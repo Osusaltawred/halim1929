@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أرشيف عبدالحليم حافظ | Abdel Halim Hafez Digital Archive</title>
+  <meta name="description" content="أرشيف رقمي شامل يوثق أعمال عبدالحليم حافظ: الأغاني، الحفلات، الأفلام، التسجيلات، الصور، والسيرة الذاتية.">
+  <meta name="keywords" content="عبدالحليم حافظ, أرشيف, أغاني, حفلات, أفلام, العندليب الأسمر">
+  <meta name="author" content="أرشيف عبدالحليم حافظ الرقمي">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="أرشيف عبدالحليم حافظ الرقمي">
+  <meta property="og:description" content="أرشيف رقمي شامل يوثق أعمال عبدالحليم حافظ: الأغاني، الحفلات، الأفلام، التسجيلات، الصور، والسيرة الذاتية.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="أرشيف عبدالحليم حافظ الرقمي">
+  <meta name="twitter:description" content="أرشيف رقمي شامل يوثق أعمال عبدالحليم حافظ.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1a1a1a">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "عبد الحليم حافظ",
+    "alternateName": "Abdel Halim Hafez",
+    "description": "مغنٍ وممثل ومنتج موسيقي مصري، أحد أبرز رموز الغناء العربي في القرن العشرين",
+    "birthDate": "1929-06-21",
+    "deathDate": "1977-03-30",
+    "birthPlace": "قرية الحلوات، محافظة الشرقية، مصر"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <button class="menu-toggle" id="menuToggle" aria-label="القائمة">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <a href="#home" class="logo" aria-label="أرشيف عبدالحليم حافظ">
+        <span class="logo-text">أرشيف عبدالحليم حافظ</span>
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع الليلي">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link active">الرئيسية</a>
+      <a href="#songs" class="nav-link">الأغاني</a>
+      <a href="#concerts" class="nav-link">الحفلات</a>
+      <a href="#films" class="nav-link">الأفلام</a>
+      <a href="#photos" class="nav-link">الصور</a>
+      <a href="#decades" class="nav-link">العقود</a>
+      <a href="#composers" class="nav-link">الملحنون</a>
+      <a href="#lyricists" class="nav-link">الشعراء</a>
+      <a href="#bio" class="nav-link">السيرة</a>
+    </nav>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main id="main">
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="assets/halim-photo.jpg" alt="عبدالحليم حافظ" class="hero-photo" loading="eager" />
+        </div>
+        <h1 class="hero-title">عبدالحليم حافظ</h1>
+        <p class="hero-subtitle">الأرشيف الرقمي</p>
+        <p class="hero-desc">أرشيف رقمي يوثق أعمال عبدالحليم حافظ وحفلاته وأفلامه وتسجيلاته وصوره.</p>
+
+        <!-- Search -->
+        <div class="search-box">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="ابحث عن أغنية، فيلم، ملحن، شاعر، سنة..." autocomplete="off" />
+          <button class="search-clear" id="searchClear" aria-label="مسح" style="display:none;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Search Results -->
+        <div class="search-results" id="searchResults" style="display:none;"></div>
+      </div>
+    </section>
+
+    <!-- Quick Access (Mobile First) -->
+    <section class="quick-access">
+      <div class="container">
+        <div class="quick-grid">
+          <a href="#songs" class="quick-card">
+            <span class="quick-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+            <span class="quick-label">الأغاني</span>
+          </a>
+          <a href="#concerts" class="quick-card">
+            <span class="quick-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg></span>
+            <span class="quick-label">الحفلات</span>
+          </a>
+          <a href="#films" class="quick-card">
+            <span class="quick-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="22" y2="7"/><line x1="2" y1="17" x2="22" y2="17"/></svg></span>
+            <span class="quick-label">الأفلام</span>
+          </a>
+          <a href="#favorites" class="quick-card">
+            <span class="quick-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+            <span class="quick-label">المفضلة</span>
+          </a>
+          <a href="#recent" class="quick-card">
+            <span class="quick-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+            <span class="quick-label">استمعت مؤخرًا</span>
+          </a>
+          <a href="#bio" class="quick-card">
+            <span class="quick-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+            <span class="quick-label">السيرة</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Decades -->
+    <section class="section" id="decades">
+      <div class="container">
+        <h2 class="section-title">تصفح حسب العقد</h2>
+        <div class="decades-grid">
+          <a href="#" class="decade-card" data-decade="1950">
+            <h3>الخمسينيات</h3>
+            <p>1950 — 1959</p>
+            <span class="decade-count" id="count-1950"></span>
+          </a>
+          <a href="#" class="decade-card" data-decade="1960">
+            <h3>الستينيات</h3>
+            <p>1960 — 1969</p>
+            <span class="decade-count" id="count-1960"></span>
+          </a>
+          <a href="#" class="decade-card" data-decade="1970">
+            <h3>السبعينيات</h3>
+            <p>1970 — 1979</p>
+            <span class="decade-count" id="count-1970"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Songs Section -->
+    <section class="section" id="songs">
+      <div class="container">
+        <h2 class="section-title">الأغاني</h2>
+
+        <!-- Filters -->
+        <div class="filters-bar" id="filtersBar">
+          <select id="filterYear" class="filter-select">
+            <option value="">كل السنوات</option>
+          </select>
+          <select id="filterComposer" class="filter-select">
+            <option value="">كل الملحنين</option>
+          </select>
+          <select id="filterLyricist" class="filter-select">
+            <option value="">كل الشعراء</option>
+          </select>
+          <select id="filterCategory" class="filter-select">
+            <option value="">كل التصنيفات</option>
+          </select>
+          <select id="filterFilm" class="filter-select">
+            <option value="">كل الأفلام</option>
+          </select>
+          <select id="filterRecordingType" class="filter-select">
+            <option value="">كل أنواع التسجيل</option>
+          </select>
+        </div>
+
+        <div class="songs-grid" id="songsGrid"></div>
+        <div class="load-more" id="loadMore" style="display:none;">
+          <button class="btn-load-more" id="loadMoreBtn">عرض المزيد</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent -->
+    <section class="section" id="recent" style="display:none;">
+      <div class="container">
+        <h2 class="section-title">استمعت مؤخرًا</h2>
+        <div class="songs-grid" id="recentGrid"></div>
+      </div>
+    </section>
+
+    <!-- Favorites -->
+    <section class="section" id="favorites" style="display:none;">
+      <div class="container">
+        <h2 class="section-title">المفضلة</h2>
+        <div class="songs-grid" id="favoritesGrid"></div>
+      </div>
+    </section>
+
+    <!-- Concerts -->
+    <section class="section" id="concerts">
+      <div class="container">
+        <h2 class="section-title">الحفلات والتسجيلات</h2>
+        <div class="concerts-grid" id="concertsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Films -->
+    <section class="section" id="films">
+      <div class="container">
+        <h2 class="section-title">الأفلام</h2>
+        <div class="films-grid" id="filmsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Composers -->
+    <section class="section" id="composers">
+      <div class="container">
+        <h2 class="section-title">الملحنون</h2>
+        <div class="people-grid" id="composersGrid"></div>
+      </div>
+    </section>
+
+    <!-- Lyricists -->
+    <section class="section" id="lyricists">
+      <div class="container">
+        <h2 class="section-title">الشعراء</h2>
+        <div class="people-grid" id="lyricistsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Photos -->
+    <section class="section" id="photos">
+      <div class="container">
+        <h2 class="section-title">صور عبدالحليم حافظ</h2>
+        <p class="section-note">يمكن إضافة الصور لاحقًا من لوحة الإدارة.</p>
+        <div class="photos-grid" id="photosGrid"></div>
+      </div>
+    </section>
+
+    <!-- Biography -->
+    <section class="section" id="bio">
+      <div class="container">
+        <h2 class="section-title">حياة عبدالحليم حافظ</h2>
+        <div class="bio-content" id="bioContent"></div>
+        <div class="bio-sources" id="bioSources"></div>
+      </div>
+    </section>
+
+    <!-- Sources -->
+    <section class="section sources-section">
+      <div class="container">
+        <h2 class="section-title">المصادر</h2>
+        <div class="sources-list" id="sourcesList"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Song Detail Modal ===== -->
+  <div class="modal-overlay" id="songModal" style="display:none;">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ===== Full Page Player ===== -->
+  <div class="full-player" id="fullPlayer" style="display:none;">
+    <button class="full-player-close" id="fullPlayerClose" aria-label="إغلاق">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="full-player-content">
+      <div class="full-player-cover" id="fullPlayerCover">
+        <img src="assets/halim-photo.jpg" alt="عبدالحليم حافظ" />
+      </div>
+      <div class="full-player-info">
+        <h3 class="full-player-title" id="fullPlayerTitle">—</h3>
+        <p class="full-player-subtitle" id="fullPlayerSubtitle">عبدالحليم حافظ</p>
+      </div>
+      <div class="full-player-progress">
+        <div class="progress-bar" id="fullProgressBar">
+          <div class="progress-fill" id="fullProgressFill"></div>
+        </div>
+        <div class="full-player-times">
+          <span class="player-time" id="fullPlayerCurrentTime">0:00</span>
+          <span class="player-time" id="fullPlayerDuration">0:00</span>
+        </div>
+      </div>
+      <div class="full-player-controls">
+        <button class="player-btn" id="fullPlayerPrev" aria-label="السابق">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"/><polygon points="5 20 5 4 3 4 3 20 5 20"/></svg>
+        </button>
+        <button class="player-btn player-play-btn" id="fullPlayerPlayPause" aria-label="تشغيل/إيقاف">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" id="fullPlayIcon"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" id="fullPauseIcon" style="display:none;"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+        </button>
+        <button class="player-btn" id="fullPlayerNext" aria-label="التالي">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"/><polygon points="19 4 19 20 21 20 21 4 19 4"/></svg>
+        </button>
+      </div>
+      <button class="full-player-minimize" id="fullPlayerMinimize">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/><line x1="14" y1="10" x2="21" y2="3"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+        <span>تصغير</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== Mini Player (Bottom Bar) ===== -->
+  <div class="audio-player" id="audioPlayer" style="display:none;">
+    <div class="player-cover-mini">
+      <img src="assets/halim-photo.jpg" alt="" id="playerCoverImg" />
+    </div>
+    <div class="player-info" id="playerInfoBar">
+      <span class="player-title" id="playerTitle">—</span>
+      <span class="player-artist">عبدالحليم حافظ</span>
+    </div>
+    <div class="player-controls">
+      <button class="player-btn" id="playerPrev" aria-label="السابق">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"/><polygon points="5 20 5 4 3 4 3 20 5 20"/></svg>
+      </button>
+      <button class="player-btn player-play-btn" id="playerPlayPause" aria-label="تشغيل/إيقاف">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" id="playIcon"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" id="pauseIcon" style="display:none;"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+      </button>
+      <button class="player-btn" id="playerNext" aria-label="التالي">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"/><polygon points="19 4 19 20 21 20 21 4 19 4"/></svg>
+      </button>
+      <button class="player-btn" id="playerExpand" aria-label="تكبير">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+      </button>
+      <button class="player-btn player-close-btn" id="playerClose" aria-label="إغلاق">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="player-progress">
+      <span class="player-time" id="playerCurrentTime">0:00</span>
+      <div class="progress-bar" id="progressBar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <span class="player-time" id="playerDuration">0:00</span>
+    </div>
+    <audio id="audioElement" preload="metadata"></audio>
+  </div>
+
+  <!-- ===== Bottom Nav (Mobile) ===== -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#home" class="bottom-nav-item active">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>الرئيسية</span>
+    </a>
+    <a href="#songs" class="bottom-nav-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span>الأغاني</span>
+    </a>
+    <button class="bottom-nav-item" id="bottomSearchBtn">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <span>بحث</span>
+    </button>
+    <a href="#favorites" class="bottom-nav-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <span>المفضلة</span>
+    </a>
+    <button class="bottom-nav-item" id="bottomMenuBtn">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <span>المزيد</span>
+    </button>
+  </nav>
+
+  <!-- ===== Guide Modal ===== -->
+  <div class="guide-overlay" id="guideOverlay">
+    <div class="guide-content">
+      <button class="guide-close" id="guideClose" aria-label="إغلاق">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 style="font-family:var(--font-display); color:var(--color-primary); margin-bottom:1.5rem; text-align:center;">دليل استخدام الأرشيف</h2>
+
+      <div class="guide-section">
+        <h3>🎵 البحث عن أغنية</h3>
+        <p>اكتب اسم الأغنية أو الملحن أو الشاعر أو السنة في مربع البحث في الصفحة الرئيسية. النتائج تظهر فورًا أثناء الكتابة. اضغط على زر التشغيل (▶) للاستماع مباشرة، أو اضغط على اسم الأغنية لرؤية التفاصيل.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>🔍 التصفح والفلاتر</h3>
+        <p>في قسم الأغاني، استخدم الفلاتر للتصفية حسب: السنة، الملحن، الشاعر، الفيلم، التصنيف، نوع التسجيل. يمكنك أيضًا التصفح حسب العقد (الخمسينيات، الستينيات، السبعينيات) من الصفحة الرئيسية.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>▶ تشغيل الأغاني</h3>
+        <p>عند تشغيل أغنية لها ملف صوتي، يفتح المشغل الكامل تلقائيًا. يمكنك تصغيره إلى شريط سفلي (Mini Player) أو إغلاقه بالكامل بزر X. المشغل يدعم Media Session API لتشغيل الصوت في الخلفية على الجوال.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>❤ المفضلة وآخر الاستماع</h3>
+        <p>اضغط على زر القلب بجانب أي أغنية لإضافتها للمفضلة. الأغاني التي تستمع إليها تُحفظ تلقائيًا في «استمعت مؤخرًا». هذه القوائم محفوظة على جهازك فقط.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>🎬 الأفلام</h3>
+        <p>تصفح 16 فيلمًا لعبدالحليم حافظ. اضغط على أي فيلم لرؤية قائمة أغانيه المرتبطة بصفحات الأغاني الأصلية.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>📖 السيرة الذاتية</h3>
+        <p>صفحة مفصلة عن حياة عبدالحليم حافظ مقسمة زمنيًا من الميلاد حتى الإرث الفني، مع ذكر المصادر.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>🌙 الوضع الليلي</h3>
+        <p>اضغط على أيقونة الهلال في الأعلى للتبديل بين الوضع النهاري والليلي. يتم حفظ اختيارك على جهازك.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>📱 التثبيت كتطبيق (PWA)</h3>
+        <p>على الجوال: افتح القائمة في المتصفح واختر «إضافة إلى الشاشة الرئيسية». سيعمل الموقع كتطبيق مستقل.</p>
+      </div>
+
+      <div class="guide-section">
+        <h3>⚙ لوحة الإدارة</h3>
+        <p>اضغط على «لوحة الإدارة» في أسفل الصفحة. كلمة المرور الافتراضية: admin123</p>
+        <p>من لوحة الإدارة يمكنك:</p>
+        <p>• إضافة أغاني وأفلام وحفلات وملحنين وشعراء وتصنيفات وصور جديدة<br>
+        • البحث عن أغنية موجودة وإضافة رابط صوتي لها<br>
+        • تصدير واستيراد البيانات بصيغة JSON<br>
+        • إضافة بوستر للأفلام</p>
+      </div>
+
+      <div class="guide-warning">
+        <strong>⚠ مهم بخصوص الحفظ:</strong>
+        التعديلات التي تُجريها من لوحة الإدارة تُحفظ على جهازك فقط (LocalStorage). إذا شاركت الرابط مع شخص آخر، فلن يرى تعديلاتك. لمشاركة التعديلات مع الجميع، استخدم «تصدير JSON» ثم حدّث ملف data.js.
+      </div>
+
+      <div class="guide-section">
+        <h3>📤 كيف أشارك تعديلاتي مع الجميع؟</h3>
+        <p>1. من لوحة الإدارة، اضغط «تصدير JSON»<br>
+        2. سيتم تنزيل ملف JSON<br>
+        3. انسخ محتواه إلى ملف data.js (مع الحفاظ على بنية ARCHIVE_DATA)<br>
+        4. أعد رفع الملف إلى الموقع</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Admin Edit Panel ===== -->
+  <div class="admin-edit-panel" id="adminEditPanel">
+    <h3 id="adminEditTitle">تعديل الأغنية</h3>
+    <div class="admin-field">
+      <label>اسم الأغنية</label>
+      <input type="text" id="editSongTitle">
+    </div>
+    <div style="display:flex; gap:0.5rem;">
+      <div class="admin-field" style="flex:1;">
+        <label>السنة</label>
+        <input type="number" id="editSongYear">
+      </div>
+      <div class="admin-field" style="flex:1;">
+        <label>العقد</label>
+        <select id="editSongDecade">
+          <option value="1950">الخمسينيات</option>
+          <option value="1960">الستينيات</option>
+          <option value="1970">السبعينيات</option>
+        </select>
+      </div>
+    </div>
+    <div style="display:flex; gap:0.5rem;">
+      <div class="admin-field" style="flex:1;">
+        <label>الملحن</label>
+        <select id="editSongComposer"></select>
+      </div>
+      <div class="admin-field" style="flex:1;">
+        <label>الشاعر</label>
+        <select id="editSongLyricist"></select>
+      </div>
+    </div>
+    <div class="admin-field">
+      <label>الفيلم</label>
+      <select id="editSongFilm"><option value="">— بدون فيلم —</option></select>
+    </div>
+    <div style="display:flex; gap:0.5rem;">
+      <div class="admin-field" style="flex:1;">
+        <label>التصنيف</label>
+        <select id="editSongCategory"></select>
+      </div>
+      <div class="admin-field" style="flex:1;">
+        <label>نوع التسجيل</label>
+        <select id="editSongRecType">
+          <option value="استوديو">استوديو</option>
+          <option value="إذاعي">إذاعي</option>
+          <option value="حفل">حفل</option>
+          <option value="تسجيل حي">تسجيل حي</option>
+          <option value="أخرى">أخرى</option>
+        </select>
+      </div>
+    </div>
+    <div class="admin-field">
+      <label>رابط الصوت (MP3 / M4A / أو رابط يوتيوب)</label>
+      <input type="url" id="editSongAudioUrl" placeholder="https://...">
+    </div>
+    <div class="admin-field">
+      <label>أو اختر ملفًا صوتيًا</label>
+      <input type="file" id="editSongAudioFile" accept="audio/*">
+      <div class="admin-file-info" id="editSongAudioInfo"></div>
+    </div>
+    <div class="admin-field">
+      <label>ملاحظات</label>
+      <input type="text" id="editSongNotes">
+    </div>
+    <div class="admin-edit-actions">
+      <button class="admin-save-btn" id="adminEditSave">💾 حفظ التعديلات</button>
+      <button class="admin-cancel-btn" id="adminEditCancel">إلغاء</button>
+      <button class="admin-cancel-btn" id="adminEditDelete" style="color:#e05050;">حذف</button>
+    </div>
+  </div>
+
+  <!-- ===== Admin Overlay ===== -->
+  <div class="admin-overlay" id="adminOverlay" style="display:none;">
+    <div class="admin-overlay-content">
+      <button class="admin-overlay-close" id="adminOverlayClose" aria-label="إغلاق">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <iframe id="adminFrame" src="about:blank" title="لوحة الإدارة"></iframe>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">أرشيف عبدالحليم حافظ الرقمي — مشروع مفتوح المصدر</p>
+      <p class="footer-note">هذا الأرشيف لأغراض ثقافية وتاريخية. لا يتم توزيع ملفات صوتية محمية بحقوق الطبع والنشر.</p>
+      <p class="footer-admin">
+        <a href="#" id="guideLink">📚 الدليل</a> · 
+        <a href="#" id="adminLink">⚙ لوحة الإدارة</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://perplexity.localhost","http://localhost:1420","http://127.0.0.1:1420","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>
