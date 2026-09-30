@@ -1,0 +1,12 @@
+{
+  "name": "halim-archive",
+  "version": "1.0.0",
+  "description": "أرشيف عبد الحليم حافظ الرقمي — تطبيق ويب بلا اعتماديات خارجية",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/smoke.js"
+  }
+}

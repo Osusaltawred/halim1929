@@ -1,0 +1,36 @@
+{
+  "_note": "بيانات أولية محدودة جدًا لإظهار شكل الموقع. لا توجد فيها تواريخ أو معلومات تاريخية مختلقة. كل ما لم يُذكر يُعرض في الموقع كـ «بيانات تحتاج إلى إدخال».",
+  "settings": {
+    "site_title": "عبد الحليم حافظ",
+    "tagline": "الأرشيف الرقمي",
+    "about": "وُلد عام 1929 وتوفي عام 1977. يجمع هذا الأرشيف تسجيلاته وحفلاته ومقابلاته وصوره ومصادرها في مكان واحد، مع بيان درجة التأكد من كل معلومة."
+  },
+  "people": [
+    { "name": "بليغ حمدي", "roles": "composer" },
+    { "name": "محمد عبد الوهاب", "roles": "composer" },
+    { "name": "كمال الطويل", "roles": "composer" },
+    { "name": "محمد الموجي", "roles": "composer" },
+    { "name": "مرسي جميل عزيز", "roles": "lyricist" },
+    { "name": "صلاح جاهين", "roles": "lyricist" },
+    { "name": "نزار قباني", "roles": "lyricist" }
+  ],
+  "timeline": [
+    { "year": 1929, "title": "الميلاد", "kind": "birth", "certainty": "confirmed" },
+    { "year": 1977, "title": "الوفاة", "kind": "death", "certainty": "confirmed" }
+  ],
+  "sources": [
+    { "title": "مصدر يحتاج إلى إدخال", "type": "other", "notes": "مثال لطريقة ربط المصادر. عدّله أو احذفه." }
+  ],
+  "songs": [
+    {
+      "title": "قارئة الفنجان",
+      "category": "poem",
+      "composers": ["محمد عبد الوهاب"],
+      "lyricists": ["نزار قباني"],
+      "description": "بيانات تحتاج إلى إدخال",
+      "recordings": [
+        { "rec_type": "other", "date_certainty": "unknown", "description": "تسجيل تجريبي بلا ملف صوتي. أضف الملف من لوحة الإدارة." }
+      ]
+    }
+  ]
+}

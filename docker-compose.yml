@@ -1,0 +1,12 @@
+services:
+  archive:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      MAX_UPLOAD_MB: 500
+    volumes:
+      # مجلد على جهازك يحفظ كل بياناتك، ولا يتأثر بإعادة البناء
+      - ./data:/data
